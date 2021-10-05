@@ -70,7 +70,7 @@ section h2{
     text-align: center;
 }
 
-section .articles{
+section .movies{
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px
