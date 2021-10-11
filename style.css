@@ -1,0 +1,30 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	border: 1px solid black;
+}
+
+
+div{
+	border: 1px solid black;
+	background: grey;
+	padding: 20px;
+	text-align:center;
+
+	/* width is relative to it's parent element, which is the <body>. So 50% of the width of the <body> width. */
+	width: 50%;
+	height: 200px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 24px;
+	font-weight:900;
+}
+
+p{
+	color: white;
+	border: 1px solid white;
+}
