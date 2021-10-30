@@ -4,25 +4,10 @@
 	padding: 0;
 }
 
-nav{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 30px;
-	background:slategray;
-	color: white;
-}
-
-ul{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 50%;
-	list-style-type: none;
-}
-
-a{
-	color: white;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	text-decoration: none;
+h1{
+	background: blue;
+	color: red;
+	border: 3px dashed red;
+	text-align: center;
+	padding: 20px 30px;
 }
