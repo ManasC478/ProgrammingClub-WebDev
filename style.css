@@ -1,0 +1,32 @@
+#red{
+	color: red;
+}
+
+#blue{
+	color: blue;
+}
+
+/* practice */
+/* 
+	<main> represents a container for the movies
+
+	<div> represents the movies
+
+	depending on the purpose of the <main> and <div> give an appropriate class attribute name to the elements
+
+	create a 3x3 grid inside <main>
+
+	each <div> should take up 1/3 of the width and should have a height of 100px
+
+	each <div> should have a border
+ */
+
+.movies-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.movie{
+	border: 1px solid black;
+	height: 100px;
+}
