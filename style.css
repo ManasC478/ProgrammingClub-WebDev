@@ -1,0 +1,149 @@
+/* the font-family link */
+/* you can import new font-families from google fonts */
+/* https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+button, a{
+	cursor: pointer;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+/* style the navigation bar */
+.nav{
+	max-width: 900px;
+	margin: auto;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.nav-link{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 5px;
+}
+
+.current-link{
+	text-decoration: underline;
+	color: #fce043;
+}
+
+.description{
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.redirect-btn{
+	display: block;
+	padding: 10px;
+	background: linear-gradient(to right bottom, #fb7ba2, #fce043);
+	width: 200px;
+	text-align:center;
+	margin-top: 10px;
+	color:white;
+	border-radius: 10px;
+}
+
+.form, .todo-list-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 0;
+}
+
+/* style the input form */
+.form form{
+	display: flex;
+	width: 600px;
+	border: 1px solid #e5e5e5;
+	background:#e5e5e5;
+}
+
+.form input, .add{
+	font-size: 24px;
+	padding: 5px;
+	border: none;
+	background: transparent;
+}
+
+.form input{
+	width: 100%;
+}
+
+.add{
+	background: white;
+	color: #fce043;
+	transition: 0.2s;
+}
+
+.add:hover{
+	background: linear-gradient(to right bottom, #fb7ba2, #fce043);
+	color: white;
+}
+
+.list-item, .checked{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 5px 0;
+  padding: 10px;
+	border-radius: 10px;
+	 transition: all 1s ease;
+}
+
+/* style the todo list item */
+.list-item {
+  width: 600px;
+	box-shadow: 0 0 5px #e5e5e5;
+	border: 1px solid #e5e5e5;
+}
+
+/* style the icon buttons */
+.btn-container{
+	margin-left: 5px;
+}
+
+.completed-btn, .delete-btn{
+	margin: 0 2px;
+	padding: 5px;
+	background: transparent;
+	border: none;
+}
+
+.completed-btn{
+	color: green;
+}
+
+.delete-btn{
+	color:red;
+}
+
+/* pointer-event: none makes it so that when the icon button is clicked the 'click' event is fired for that button, otherwise the even won't be fired because the <i> is on top of the <button> */
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+/* style for checked items */
+.checked{
+  width: 400px;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
